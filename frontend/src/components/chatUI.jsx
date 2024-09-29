@@ -17,9 +17,12 @@ export default function ChatUI() {
       try {
         setMessages([...messages, { text: input, sender: "user" }]);
 
-        const response = await axios.post("http://localhost:8080/api/message", {
-          message: input,
-        });
+        const response = await axios.post(
+          "https://rocket-ai.onrender.com/api/message",
+          {
+            message: input,
+          }
+        );
 
         setMessages((prevMessages) => [
           ...prevMessages,
