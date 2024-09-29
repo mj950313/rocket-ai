@@ -34,7 +34,7 @@ export default function ChatUI() {
   };
 
   return (
-    <div className="border w-[700px] mx-auto h-[700px] rounded-lg shadow-xl flex flex-col">
+    <div className="border rounded-lg shadow-lg flex flex-col m-4 w-[500px] lg:w-[600px] xl:w-[700px] h-[600px] lg:h-[700px] xl:h-[800px] bg-white">
       <div className="flex-1 p-4 overflow-y-auto">
         {messages.map((msg, index) => (
           <div
@@ -51,11 +51,11 @@ export default function ChatUI() {
         ))}
       </div>
 
-      <div className="p-4 border-t flex items-center text-xl">
+      <div className="p-4 border-t flex items-center text-base bg-[#F9FAFB]">
         <input
           type="text"
           placeholder={t("chat.placeholder")}
-          className="flex-1 p-2 border-l border-y rounded-l-lg"
+          className="flex-1 p-2 border-l border-y rounded-l-lg placeholder:text-base"
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyUp={(e) => {
@@ -68,7 +68,7 @@ export default function ChatUI() {
         <button
           type="button"
           onClick={sendMessage}
-          className="bg-blue-500 text-white px-3 py-2 border-blue-500 border-r border-y box-border rounded-r-lg"
+          className="bg-blue-500 text-white px-3 py-2 text-base border-blue-500 border-r border-y box-border rounded-r-lg hover:bg-blue-600"
         >
           전송
         </button>
