@@ -61,7 +61,7 @@ export default function ChatUI() {
           className="flex-1 p-2 border-l border-y rounded-l-lg placeholder:text-base"
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          onKeyUp={(e) => {
+          onKeyPress={(e) => {
             if (e.key === "Enter") {
               e.preventDefault();
               sendMessage();
