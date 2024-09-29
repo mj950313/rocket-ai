@@ -11,6 +11,9 @@ i18n
                 title: "로켓AI",
                 language: "한국어",
               },
+              chat: {
+                placeholder: "메시지를 입력하세요 ..."
+              }
             },
           },
         en: {
@@ -19,6 +22,9 @@ i18n
                 title: "RocketAI",
                 language: "English",
             },
+            chat: {
+              placeholder: "Enter your message ..."
+            }
             },
         },
     },

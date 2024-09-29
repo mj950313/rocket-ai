@@ -11,7 +11,7 @@ export default function Header() {
   };
 
   return (
-    <div className="border-b-2 shadow-lg relative">
+    <div className="shadow-lg relative">
       <div className="xl:w-[1280px] h-[80px] mx-auto text-2xl font-bold p-5 flex items-center justify-between">
         <h1>{t("header.title")}</h1>
         <div className="relative">
